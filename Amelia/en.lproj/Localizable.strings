@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  Amelia
+
+  Created by Amy Collector on 10/07/2020.
+  Copyright © 2020 Amy Collector. All rights reserved.
+*/
+
+"about_acknowledgements" = "ACKNOWLEDGEMENTS";
+"about_swift_libs" = "SWIFT LIBRARIES";
+
+"about_reset" = "RESET";
+"about_reset_cancel" = "Cancel";
+"about_reset_image_cache" = "Reset Image Cache";
+"about_reset_image_cache_question" = "Are you sure you would like to reset the image cache?";
+"about_reset_image_cache_yes" = "Yes, Reset Image Cache";
+"about_reset_data" = "Reset Amiibo Data";
+"about_reset_data_question" = "Are you sure you would like to reset your Amiibo data?";
+"about_reset_data_yes" = "Yes, Reset Amiibo Data";
+
+"all_amiibos" = "All Amiibos";
+"app_name" = "Amy";
+
+"backup_dismiss" = "Backup & Dismiss";
+"backup_invalid" = "This does not seem to be a valid Amiibo backup.";
+
+"character_name_search" = "Character name";
+
+"no_amiibo_list_search %@" = "There are no Amiibos that contain '%@' in their name.";
+"no_amiibo_list" = "There are no Amiibos in this set.";
+
+"delete_amiibo_confirm" = "Are you sure you would like to delete this Amiibo?";
+"delete_question" = "Delete Amiibo?";
+"delete_yes" = "Yes, Delete";
+"delete_no" = "No";
+
+"detail_id" = "ID";
+"detail_name" = "Name";
+"detail_amiibo_series" = "Amiibo Series";
+"detail_game_series" = "Game Series";
+
+"devices" = "Devices";
+"dismiss" = "Dismiss";
+
+"empty_favourites" = "It's looking a bit lonely here, go start favoriting your Amiibos.";
+"empty_owned" = "Use the Identify feature to add Amiibos to your collection.";
+"empty_wishlist" = "You haven't added any Amiibos to your Wish List.";
+"empty_n2_bank" = "To start managing your N2 Elite, you will first need to read all the accessible slots.";
+
+"favourites" = "Favorites";
+"identify" = "Identify";
+
+"n2_elite" = "N2 Elite";
+
+"nfc_could_not_connect" = "Could not connect to the Amiibo.";
+"nfc_could_not_connect_ntag" = "Could not connect to the tag.";
+"nfc_could_not_send_command_ntag" = "Could not send commands to the tag.";
+"nfc_could_not_read_uid" = "Could not read the Amiibo's UID.";
+"nfc_could_not_read_uid_ntag" = "Could not read the tag's UID.";
+"nfc_hold_near" = "Hold your device near an Amiibo to identify it.";
+"nfc_hold_near_elite_identify" = "Hold your device near the N2 Elite. This could take a while, do not move away until this disappears.";
+"nfc_hold_near_elite" = "Hold your device near the N2 Elite. This will overwrite the slot if it's not empty.";
+"nfc_hold_near_ntag" = "Hold your device near an empty NTAG215 tag. Do not move away until this disappears.";
+"nfc_key_not_found" = "key_retail.bin not present in Amy's folder";
+"nfc_multiple_found" = "Multiple Amiibos found. Only scan one Amiibo at a time.";
+"nfc_multiple_found_ntag" = "Multiple tags found.";
+"nfc_not_empty_ntag" = "The tag does not seem to be a valid NTAG215 or there's already an Amiibo on it.";
+"nfc_not_valid" = "This does not seem to be a valid Amiibo.";
+"nfc_not_valid_elite" = "This tag does not seem to be an N2 Elite.";
+"nfc_not_valid_ntag" = "This tag does not seem to be a valid NTAG215 tag.";
+
+"not_amiibo" = "This does not seem to be an Amiibo. Are you sure this is one?";
+"not_found_amiibo" = "Amiibo Not Found";
+"ok_lets_go" = "Okay, Let's Go";
+"ok_got_it" = "Okay, Got It";
+"owned" = "Owned";
+"privacy_policy" = "Amy does not, and will not collect any data about you or your usage.\n\nThere will be no ads or analytics since you have supported its development by paying.\n\nAny requests to amycollector.app will be purely to check for updates to the Amiibo information. Nothing else will be sent.\n\nThank you so much for reading this very terse Privacy Policy. If you have any questions, send us an email at help@amycollector.app";
+
+"remove_wish_list_amiibo_confirm" = "Are you sure you would like to remove this Amiibo from your Wish List?";
+"remove_wish_list_question" = "Remove Amiibo?";
+"remove_wish_list_yes" = "Yes, Remove";
+"remove_wish_list_no" = "No";
+
+"restore_data" = "Restore Data";
+"restore_data_elite" = "Restore Data to Slot";
+"restore_iphone7" = "iPhone 7 devices might not write the tag data correctly. Proceed with caution.";
+
+"settings" = "Settings";
+"settings_about" = "About";
+"settings_amiibo_data" = "AMIIBO INFORMATION";
+"settings_autosave" = "Auto Save Scans";
+"settings_check_update" = "Check For Updates";
+"settings_custom_icon" = "Custom Icons";
+"settings_elite" = "Support N2 Elite";
+"settings_last_updated %@" = "Last updated: %@";
+"settings_identify" = "Identify After Restore";
+"settings_need_help" = "Need Help?";
+"settings_options" = "OPTIONS";
+"settings_privacy_policy" = "Privacy Policy";
+"settings_send_feedback" = "Send Feedback";
+"settings_whats_new" = "What's New?";
+
+"slots_available" = "Accessible Slots";
+"slot_active" = "Active Slot";
+"slots_read" = "Read Slots";
+"slots_update" = "Update Settings";
+"slot_set_active" = "Set as Active";
+"slot_erase" = "Erase Data";
+"slot_perform_action %@" = "Which action to perform on slot %@?";
+
+"wish_list" = "Wish List";
+"wish_list_add" = "Add To Wish List";
+"wish_list_remove" = "Remove From Wish List";
+"wish_list_search" = "Search through all the Amiibos you don't own or not in your Wish List yet.";
+"wish_list_search_no_result %@" = "There are no Amiibos that contain '%@' in their name.";

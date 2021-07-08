@@ -1,0 +1,941 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C1C57D524E47E5C002D19C3 /* EliteSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C57D424E47E5C002D19C3 /* EliteSettings.swift */; };
+		2C35D5E7251E9F63009AB2DA /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2C35D5E6251E9F63009AB2DA /* SDWebImageSwiftUI */; };
+		2C35D5EC25226A4B009AB2DA /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 2C35D5EB25226A4B009AB2DA /* GRDB */; };
+		2C47350724BA4DF10037B8C1 /* AmiibosByCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47350624BA4DF10037B8C1 /* AmiibosByCategory.swift */; };
+		2C47350924BA55C00037B8C1 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47350824BA55C00037B8C1 /* RoundedButton.swift */; };
+		2C47351024BA5FF70037B8C1 /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47350F24BA5FF70037B8C1 /* MainViewViewModel.swift */; };
+		2C47351324BA62840037B8C1 /* AmiiboData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47351224BA62840037B8C1 /* AmiiboData.swift */; };
+		2C47351524BA62D30037B8C1 /* Amiibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47351424BA62D30037B8C1 /* Amiibo.swift */; };
+		2C47351724BA63580037B8C1 /* AmiiboRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47351624BA63580037B8C1 /* AmiiboRepository.swift */; };
+		2C47351924BA65A00037B8C1 /* EmptyListMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47351824BA65A00037B8C1 /* EmptyListMessage.swift */; };
+		2C47351B24BA6E2E0037B8C1 /* GameSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47351A24BA6E2E0037B8C1 /* GameSeries.swift */; };
+		2C47351E24BA786D0037B8C1 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47351D24BA786D0037B8C1 /* UserDefaults+Extensions.swift */; };
+		2C47352024BA7A890037B8C1 /* amiiboapi.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C47351F24BA7A880037B8C1 /* amiiboapi.json */; };
+		2C47352224BB1EAA0037B8C1 /* AmiibosByCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47352124BB1EAA0037B8C1 /* AmiibosByCategoryViewModel.swift */; };
+		2C47352424BB240E0037B8C1 /* CharacterListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47352324BB240E0037B8C1 /* CharacterListItem.swift */; };
+		2C47352624BB29F70037B8C1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47352524BB29F70037B8C1 /* SearchBar.swift */; };
+		2C47352824BB81F30037B8C1 /* ChevronRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47352724BB81F30037B8C1 /* ChevronRight.swift */; };
+		2C47352A24BB996B0037B8C1 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47352924BB996B0037B8C1 /* SettingsViewModel.swift */; };
+		2C47352C24BB9AE50037B8C1 /* PrivacyPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47352B24BB9AE50037B8C1 /* PrivacyPolicy.swift */; };
+		2C47353824BBA28E0037B8C1 /* midnight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C47352E24BBA28E0037B8C1 /* midnight@2x.png */; };
+		2C47353924BBA28E0037B8C1 /* midnight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C47352F24BBA28E0037B8C1 /* midnight@3x.png */; };
+		2C47353A24BBA28E0037B8C1 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C47353024BBA28E0037B8C1 /* default@2x.png */; };
+		2C47353B24BBA28E0037B8C1 /* whiteout@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C47353124BBA28E0037B8C1 /* whiteout@3x.png */; };
+		2C47353C24BBA28E0037B8C1 /* whiteout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C47353224BBA28E0037B8C1 /* whiteout@2x.png */; };
+		2C47353D24BBA28E0037B8C1 /* default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C47353324BBA28E0037B8C1 /* default@3x.png */; };
+		2C47353E24BBA28E0037B8C1 /* pride@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C47353424BBA28E0037B8C1 /* pride@2x.png */; };
+		2C47353F24BBA28E0037B8C1 /* classico@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C47353524BBA28E0037B8C1 /* classico@2x.png */; };
+		2C47354024BBA28E0037B8C1 /* classico@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C47353624BBA28E0037B8C1 /* classico@3x.png */; };
+		2C47354124BBA28E0037B8C1 /* pride@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C47353724BBA28E0037B8C1 /* pride@3x.png */; };
+		2C47354324BBA2E40037B8C1 /* CustomIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47354224BBA2E40037B8C1 /* CustomIcons.swift */; };
+		2C47354524BBA8490037B8C1 /* WhatsNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47354424BBA8490037B8C1 /* WhatsNew.swift */; };
+		2C47354724BBB3EC0037B8C1 /* NfcIdentify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47354624BBB3EC0037B8C1 /* NfcIdentify.swift */; };
+		2C47354924BBB4EF0037B8C1 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47354824BBB4EF0037B8C1 /* Data+Extensions.swift */; };
+		2C47354B24BBB5240037B8C1 /* TagUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47354A24BBB5240037B8C1 /* TagUtility.swift */; };
+		2C47354E24BC4E8A0037B8C1 /* IdentifyResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47354D24BC4E8A0037B8C1 /* IdentifyResult.swift */; };
+		2C47355024BC647B0037B8C1 /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47354F24BC647B0037B8C1 /* FileManager+Extensions.swift */; };
+		2C47355224BC7E690037B8C1 /* NfcWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47355124BC7E690037B8C1 /* NfcWrite.swift */; };
+		2C47355524BC7EF40037B8C1 /* amiitool in Frameworks */ = {isa = PBXBuildFile; productRef = 2C47355424BC7EF40037B8C1 /* amiitool */; };
+		2C47355724BC7F190037B8C1 /* Amiitool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47355624BC7F190037B8C1 /* Amiitool.swift */; };
+		2C47355924BC8DFD0037B8C1 /* LinearProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47355824BC8DFD0037B8C1 /* LinearProgress.swift */; };
+		2C47355B24BC98760037B8C1 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47355A24BC98760037B8C1 /* Help.swift */; };
+		2C49B00024B360D80013F6F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49AFFF24B360D80013F6F0 /* AppDelegate.swift */; };
+		2C49B00224B360D80013F6F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49B00124B360D80013F6F0 /* SceneDelegate.swift */; };
+		2C49B00424B360D80013F6F0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49B00324B360D80013F6F0 /* MainView.swift */; };
+		2C49B00624B360DA0013F6F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C49B00524B360DA0013F6F0 /* Assets.xcassets */; };
+		2C49B00924B360DA0013F6F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C49B00824B360DA0013F6F0 /* Preview Assets.xcassets */; };
+		2C49B00C24B360DA0013F6F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C49B00A24B360DA0013F6F0 /* LaunchScreen.storyboard */; };
+		2C49B01724B360DA0013F6F0 /* AmeliaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49B01624B360DA0013F6F0 /* AmeliaUITests.swift */; };
+		2C4D122E24CB7774000CE1C8 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D122D24CB7774000CE1C8 /* ActivityIndicator.swift */; };
+		2C637C2B24B7A1C6002DCDA3 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C637C2A24B7A1C6002DCDA3 /* BlurView.swift */; };
+		2C637C2F24B7A88D002DCDA3 /* CharacterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C637C2E24B7A88D002DCDA3 /* CharacterCard.swift */; };
+		2C637C3224B89698002DCDA3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C637C3424B89698002DCDA3 /* Localizable.strings */; };
+		2C637C3B24B8AA2C002DCDA3 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C637C3A24B8AA2C002DCDA3 /* Favourites.swift */; };
+		2C637C3F24B8B603002DCDA3 /* CharacterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C637C3E24B8B603002DCDA3 /* CharacterDetails.swift */; };
+		2C637C4124B8D65B002DCDA3 /* SeriesSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C637C4024B8D65B002DCDA3 /* SeriesSection.swift */; };
+		2C637C4424B8DAB7002DCDA3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C637C4324B8DAB7002DCDA3 /* Settings.swift */; };
+		2C77AFCA24DF297D00B95623 /* DeviceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77AFC924DF297D00B95623 /* DeviceList.swift */; };
+		2C77AFCD24DF2AA100B95623 /* BankManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77AFCC24DF2AA100B95623 /* BankManagement.swift */; };
+		2C77AFCF24DF2BC300B95623 /* N2EliteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77AFCE24DF2BC300B95623 /* N2EliteManager.swift */; };
+		2C77AFD124E03E2D00B95623 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77AFD024E03E2D00B95623 /* Array+Extensions.swift */; };
+		2C77AFD324E1EEE900B95623 /* SlotRestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77AFD224E1EEE900B95623 /* SlotRestore.swift */; };
+		2C77AFD524E1F0AE00B95623 /* SlotRestoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77AFD424E1F0AE00B95623 /* SlotRestoreViewModel.swift */; };
+		2C84408124BE2634004AA51F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C84408024BE2634004AA51F /* CloudKit.framework */; };
+		2C84408324BE429F004AA51F /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84408224BE429F004AA51F /* MailView.swift */; };
+		2C84408624BE44F6004AA51F /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2C84408524BE44F6004AA51F /* DeviceKit */; };
+		2C84408924BE4E2E004AA51F /* CloudKitQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84408824BE4E2E004AA51F /* CloudKitQueue.swift */; };
+		2C84408B24BE4E61004AA51F /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84408A24BE4E61004AA51F /* CloudKitHelper.swift */; };
+		2C84408D24BE4E83004AA51F /* SyncConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84408C24BE4E83004AA51F /* SyncConstants.swift */; };
+		2C84408F24BE4EB8004AA51F /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84408E24BE4EB8004AA51F /* CharacterData.swift */; };
+		2C9417D924BD07820081A15B /* SearchAmiibos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9417D824BD07820081A15B /* SearchAmiibos.swift */; };
+		2C9417DB24BD07A50081A15B /* SearchAmiibosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9417DA24BD07A50081A15B /* SearchAmiibosViewModel.swift */; };
+		2C9417DD24BDC6A00081A15B /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9417DC24BDC6A00081A15B /* About.swift */; };
+		2C9417E024BDED8A0081A15B /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9417DF24BDED8A0081A15B /* SnapshotHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C49B01324B360DA0013F6F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C49AFF424B360D80013F6F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C49AFFB24B360D80013F6F0;
+			remoteInfo = Amelia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C1C57D424E47E5C002D19C3 /* EliteSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EliteSettings.swift; sourceTree = "<group>"; };
+		2C47350624BA4DF10037B8C1 /* AmiibosByCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiibosByCategory.swift; sourceTree = "<group>"; };
+		2C47350824BA55C00037B8C1 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		2C47350F24BA5FF70037B8C1 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		2C47351224BA62840037B8C1 /* AmiiboData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboData.swift; sourceTree = "<group>"; };
+		2C47351424BA62D30037B8C1 /* Amiibo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amiibo.swift; sourceTree = "<group>"; };
+		2C47351624BA63580037B8C1 /* AmiiboRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboRepository.swift; sourceTree = "<group>"; };
+		2C47351824BA65A00037B8C1 /* EmptyListMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListMessage.swift; sourceTree = "<group>"; };
+		2C47351A24BA6E2E0037B8C1 /* GameSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSeries.swift; sourceTree = "<group>"; };
+		2C47351D24BA786D0037B8C1 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		2C47351F24BA7A880037B8C1 /* amiiboapi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amiiboapi.json; sourceTree = "<group>"; };
+		2C47352124BB1EAA0037B8C1 /* AmiibosByCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiibosByCategoryViewModel.swift; sourceTree = "<group>"; };
+		2C47352324BB240E0037B8C1 /* CharacterListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListItem.swift; sourceTree = "<group>"; };
+		2C47352524BB29F70037B8C1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		2C47352724BB81F30037B8C1 /* ChevronRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChevronRight.swift; sourceTree = "<group>"; };
+		2C47352924BB996B0037B8C1 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		2C47352B24BB9AE50037B8C1 /* PrivacyPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicy.swift; sourceTree = "<group>"; };
+		2C47352E24BBA28E0037B8C1 /* midnight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "midnight@2x.png"; sourceTree = "<group>"; };
+		2C47352F24BBA28E0037B8C1 /* midnight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "midnight@3x.png"; sourceTree = "<group>"; };
+		2C47353024BBA28E0037B8C1 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
+		2C47353124BBA28E0037B8C1 /* whiteout@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteout@3x.png"; sourceTree = "<group>"; };
+		2C47353224BBA28E0037B8C1 /* whiteout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteout@2x.png"; sourceTree = "<group>"; };
+		2C47353324BBA28E0037B8C1 /* default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@3x.png"; sourceTree = "<group>"; };
+		2C47353424BBA28E0037B8C1 /* pride@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pride@2x.png"; sourceTree = "<group>"; };
+		2C47353524BBA28E0037B8C1 /* classico@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "classico@2x.png"; sourceTree = "<group>"; };
+		2C47353624BBA28E0037B8C1 /* classico@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "classico@3x.png"; sourceTree = "<group>"; };
+		2C47353724BBA28E0037B8C1 /* pride@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pride@3x.png"; sourceTree = "<group>"; };
+		2C47354224BBA2E40037B8C1 /* CustomIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIcons.swift; sourceTree = "<group>"; };
+		2C47354424BBA8490037B8C1 /* WhatsNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNew.swift; sourceTree = "<group>"; };
+		2C47354624BBB3EC0037B8C1 /* NfcIdentify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NfcIdentify.swift; sourceTree = "<group>"; };
+		2C47354824BBB4EF0037B8C1 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		2C47354A24BBB5240037B8C1 /* TagUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagUtility.swift; sourceTree = "<group>"; };
+		2C47354D24BC4E8A0037B8C1 /* IdentifyResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyResult.swift; sourceTree = "<group>"; };
+		2C47354F24BC647B0037B8C1 /* FileManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extensions.swift"; sourceTree = "<group>"; };
+		2C47355124BC7E690037B8C1 /* NfcWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NfcWrite.swift; sourceTree = "<group>"; };
+		2C47355624BC7F190037B8C1 /* Amiitool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amiitool.swift; sourceTree = "<group>"; };
+		2C47355824BC8DFD0037B8C1 /* LinearProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearProgress.swift; sourceTree = "<group>"; };
+		2C47355A24BC98760037B8C1 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
+		2C49AFFC24B360D80013F6F0 /* Amy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C49AFFF24B360D80013F6F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C49B00124B360D80013F6F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2C49B00324B360D80013F6F0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2C49B00524B360DA0013F6F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C49B00824B360DA0013F6F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C49B00B24B360DA0013F6F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C49B00D24B360DA0013F6F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C49B01224B360DA0013F6F0 /* AmeliaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmeliaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C49B01624B360DA0013F6F0 /* AmeliaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmeliaUITests.swift; sourceTree = "<group>"; };
+		2C49B01824B360DA0013F6F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4D122D24CB7774000CE1C8 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		2C637C2A24B7A1C6002DCDA3 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		2C637C2E24B7A88D002DCDA3 /* CharacterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCard.swift; sourceTree = "<group>"; };
+		2C637C3524B896FD002DCDA3 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2C637C3624B896FD002DCDA3 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2C637C3724B8975A002DCDA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C637C3A24B8AA2C002DCDA3 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
+		2C637C3E24B8B603002DCDA3 /* CharacterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetails.swift; sourceTree = "<group>"; };
+		2C637C4024B8D65B002DCDA3 /* SeriesSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesSection.swift; sourceTree = "<group>"; };
+		2C637C4324B8DAB7002DCDA3 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		2C77AFC924DF297D00B95623 /* DeviceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceList.swift; sourceTree = "<group>"; };
+		2C77AFCC24DF2AA100B95623 /* BankManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankManagement.swift; sourceTree = "<group>"; };
+		2C77AFCE24DF2BC300B95623 /* N2EliteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = N2EliteManager.swift; sourceTree = "<group>"; };
+		2C77AFD024E03E2D00B95623 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		2C77AFD224E1EEE900B95623 /* SlotRestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotRestore.swift; sourceTree = "<group>"; };
+		2C77AFD424E1F0AE00B95623 /* SlotRestoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotRestoreViewModel.swift; sourceTree = "<group>"; };
+		2C84408024BE2634004AA51F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		2C84408224BE429F004AA51F /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		2C84408824BE4E2E004AA51F /* CloudKitQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitQueue.swift; sourceTree = "<group>"; };
+		2C84408A24BE4E61004AA51F /* CloudKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
+		2C84408C24BE4E83004AA51F /* SyncConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncConstants.swift; sourceTree = "<group>"; };
+		2C84408E24BE4EB8004AA51F /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
+		2C9417D824BD07820081A15B /* SearchAmiibos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAmiibos.swift; sourceTree = "<group>"; };
+		2C9417DA24BD07A50081A15B /* SearchAmiibosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAmiibosViewModel.swift; sourceTree = "<group>"; };
+		2C9417DC24BDC6A00081A15B /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		2C9417DE24BDDAF30081A15B /* Amelia.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Amelia.entitlements; sourceTree = "<group>"; };
+		2C9417DF24BDED8A0081A15B /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C49AFF924B360D80013F6F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C35D5E7251E9F63009AB2DA /* SDWebImageSwiftUI in Frameworks */,
+				2C35D5EC25226A4B009AB2DA /* GRDB in Frameworks */,
+				2C47355524BC7EF40037B8C1 /* amiitool in Frameworks */,
+				2C84408624BE44F6004AA51F /* DeviceKit in Frameworks */,
+				2C84408124BE2634004AA51F /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C49B00F24B360DA0013F6F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C47350324BA4CC10037B8C1 /* AmiibosByCategory */ = {
+			isa = PBXGroup;
+			children = (
+				2C47350624BA4DF10037B8C1 /* AmiibosByCategory.swift */,
+				2C47352124BB1EAA0037B8C1 /* AmiibosByCategoryViewModel.swift */,
+			);
+			path = AmiibosByCategory;
+			sourceTree = "<group>";
+		};
+		2C47350A24BA5E630037B8C1 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				2C47351624BA63580037B8C1 /* AmiiboRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		2C47350E24BA5FD40037B8C1 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				2C49B00324B360D80013F6F0 /* MainView.swift */,
+				2C47350F24BA5FF70037B8C1 /* MainViewViewModel.swift */,
+				2C47354D24BC4E8A0037B8C1 /* IdentifyResult.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		2C47351124BA62690037B8C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C47351224BA62840037B8C1 /* AmiiboData.swift */,
+				2C47351424BA62D30037B8C1 /* Amiibo.swift */,
+				2C47351A24BA6E2E0037B8C1 /* GameSeries.swift */,
+				2C47354824BBB4EF0037B8C1 /* Data+Extensions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C47351C24BA78440037B8C1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2C47351D24BA786D0037B8C1 /* UserDefaults+Extensions.swift */,
+				2C47354624BBB3EC0037B8C1 /* NfcIdentify.swift */,
+				2C77AFCE24DF2BC300B95623 /* N2EliteManager.swift */,
+				2C47354A24BBB5240037B8C1 /* TagUtility.swift */,
+				2C47354F24BC647B0037B8C1 /* FileManager+Extensions.swift */,
+				2C47355124BC7E690037B8C1 /* NfcWrite.swift */,
+				2C47355624BC7F190037B8C1 /* Amiitool.swift */,
+				2C77AFD024E03E2D00B95623 /* Array+Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2C47352D24BBA28E0037B8C1 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				2C47352E24BBA28E0037B8C1 /* midnight@2x.png */,
+				2C47352F24BBA28E0037B8C1 /* midnight@3x.png */,
+				2C47353024BBA28E0037B8C1 /* default@2x.png */,
+				2C47353124BBA28E0037B8C1 /* whiteout@3x.png */,
+				2C47353224BBA28E0037B8C1 /* whiteout@2x.png */,
+				2C47353324BBA28E0037B8C1 /* default@3x.png */,
+				2C47353424BBA28E0037B8C1 /* pride@2x.png */,
+				2C47353524BBA28E0037B8C1 /* classico@2x.png */,
+				2C47353624BBA28E0037B8C1 /* classico@3x.png */,
+				2C47353724BBA28E0037B8C1 /* pride@3x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		2C49AFF324B360D80013F6F0 = {
+			isa = PBXGroup;
+			children = (
+				2C49AFFE24B360D80013F6F0 /* Amelia */,
+				2C49B01524B360DA0013F6F0 /* AmeliaUITests */,
+				2C49AFFD24B360D80013F6F0 /* Products */,
+				2C84407F24BE2634004AA51F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C49AFFD24B360D80013F6F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C49AFFC24B360D80013F6F0 /* Amy.app */,
+				2C49B01224B360DA0013F6F0 /* AmeliaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C49AFFE24B360D80013F6F0 /* Amelia */ = {
+			isa = PBXGroup;
+			children = (
+				2C84408724BE4E18004AA51F /* CloudKit */,
+				2C9417DE24BDDAF30081A15B /* Amelia.entitlements */,
+				2C47352D24BBA28E0037B8C1 /* Icons */,
+				2C47351F24BA7A880037B8C1 /* amiiboapi.json */,
+				2C47351C24BA78440037B8C1 /* Utilities */,
+				2C47351124BA62690037B8C1 /* Models */,
+				2C47350A24BA5E630037B8C1 /* Repositories */,
+				2C637C3C24B8B5DA002DCDA3 /* Pages */,
+				2C49B02124B363F60013F6F0 /* Components */,
+				2C49AFFF24B360D80013F6F0 /* AppDelegate.swift */,
+				2C49B00124B360D80013F6F0 /* SceneDelegate.swift */,
+				2C49B00524B360DA0013F6F0 /* Assets.xcassets */,
+				2C49B00A24B360DA0013F6F0 /* LaunchScreen.storyboard */,
+				2C49B00D24B360DA0013F6F0 /* Info.plist */,
+				2C49B00724B360DA0013F6F0 /* Preview Content */,
+				2C637C3424B89698002DCDA3 /* Localizable.strings */,
+			);
+			path = Amelia;
+			sourceTree = "<group>";
+		};
+		2C49B00724B360DA0013F6F0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2C49B00824B360DA0013F6F0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C49B01524B360DA0013F6F0 /* AmeliaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C9417DF24BDED8A0081A15B /* SnapshotHelper.swift */,
+				2C49B01624B360DA0013F6F0 /* AmeliaUITests.swift */,
+				2C49B01824B360DA0013F6F0 /* Info.plist */,
+			);
+			path = AmeliaUITests;
+			sourceTree = "<group>";
+		};
+		2C49B02124B363F60013F6F0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2C4D122D24CB7774000CE1C8 /* ActivityIndicator.swift */,
+				2C637C2A24B7A1C6002DCDA3 /* BlurView.swift */,
+				2C637C2E24B7A88D002DCDA3 /* CharacterCard.swift */,
+				2C637C3A24B8AA2C002DCDA3 /* Favourites.swift */,
+				2C637C4024B8D65B002DCDA3 /* SeriesSection.swift */,
+				2C47350824BA55C00037B8C1 /* RoundedButton.swift */,
+				2C47351824BA65A00037B8C1 /* EmptyListMessage.swift */,
+				2C47352324BB240E0037B8C1 /* CharacterListItem.swift */,
+				2C47352524BB29F70037B8C1 /* SearchBar.swift */,
+				2C47352724BB81F30037B8C1 /* ChevronRight.swift */,
+				2C47355824BC8DFD0037B8C1 /* LinearProgress.swift */,
+				2C77AFC924DF297D00B95623 /* DeviceList.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2C637C3C24B8B5DA002DCDA3 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				2C77AFCB24DF2A8600B95623 /* BankManagement */,
+				2C9417D724BD07610081A15B /* SearchAmiibos */,
+				2C47350E24BA5FD40037B8C1 /* MainView */,
+				2C47350324BA4CC10037B8C1 /* AmiibosByCategory */,
+				2C637C4224B8DA88002DCDA3 /* Settings */,
+				2C637C3D24B8B5E5002DCDA3 /* CharacterDetails */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		2C637C3D24B8B5E5002DCDA3 /* CharacterDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2C637C3E24B8B603002DCDA3 /* CharacterDetails.swift */,
+			);
+			path = CharacterDetails;
+			sourceTree = "<group>";
+		};
+		2C637C4224B8DA88002DCDA3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2C637C4324B8DAB7002DCDA3 /* Settings.swift */,
+				2C47352924BB996B0037B8C1 /* SettingsViewModel.swift */,
+				2C47352B24BB9AE50037B8C1 /* PrivacyPolicy.swift */,
+				2C47354224BBA2E40037B8C1 /* CustomIcons.swift */,
+				2C47354424BBA8490037B8C1 /* WhatsNew.swift */,
+				2C47355A24BC98760037B8C1 /* Help.swift */,
+				2C9417DC24BDC6A00081A15B /* About.swift */,
+				2C84408224BE429F004AA51F /* MailView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2C77AFCB24DF2A8600B95623 /* BankManagement */ = {
+			isa = PBXGroup;
+			children = (
+				2C77AFCC24DF2AA100B95623 /* BankManagement.swift */,
+				2C77AFD224E1EEE900B95623 /* SlotRestore.swift */,
+				2C77AFD424E1F0AE00B95623 /* SlotRestoreViewModel.swift */,
+				2C1C57D424E47E5C002D19C3 /* EliteSettings.swift */,
+			);
+			path = BankManagement;
+			sourceTree = "<group>";
+		};
+		2C84407F24BE2634004AA51F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C84408024BE2634004AA51F /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C84408724BE4E18004AA51F /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				2C84408824BE4E2E004AA51F /* CloudKitQueue.swift */,
+				2C84408A24BE4E61004AA51F /* CloudKitHelper.swift */,
+				2C84408C24BE4E83004AA51F /* SyncConstants.swift */,
+				2C84408E24BE4EB8004AA51F /* CharacterData.swift */,
+			);
+			path = CloudKit;
+			sourceTree = "<group>";
+		};
+		2C9417D724BD07610081A15B /* SearchAmiibos */ = {
+			isa = PBXGroup;
+			children = (
+				2C9417D824BD07820081A15B /* SearchAmiibos.swift */,
+				2C9417DA24BD07A50081A15B /* SearchAmiibosViewModel.swift */,
+			);
+			path = SearchAmiibos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C49AFFB24B360D80013F6F0 /* Amy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C49B01B24B360DA0013F6F0 /* Build configuration list for PBXNativeTarget "Amy" */;
+			buildPhases = (
+				2C49AFF824B360D80013F6F0 /* Sources */,
+				2C49AFF924B360D80013F6F0 /* Frameworks */,
+				2C49AFFA24B360D80013F6F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Amy;
+			packageProductDependencies = (
+				2C47355424BC7EF40037B8C1 /* amiitool */,
+				2C84408524BE44F6004AA51F /* DeviceKit */,
+				2C35D5E6251E9F63009AB2DA /* SDWebImageSwiftUI */,
+				2C35D5EB25226A4B009AB2DA /* GRDB */,
+			);
+			productName = Amelia;
+			productReference = 2C49AFFC24B360D80013F6F0 /* Amy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C49B01124B360DA0013F6F0 /* AmeliaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C49B01E24B360DA0013F6F0 /* Build configuration list for PBXNativeTarget "AmeliaUITests" */;
+			buildPhases = (
+				2C49B00E24B360DA0013F6F0 /* Sources */,
+				2C49B00F24B360DA0013F6F0 /* Frameworks */,
+				2C49B01024B360DA0013F6F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C49B01424B360DA0013F6F0 /* PBXTargetDependency */,
+			);
+			name = AmeliaUITests;
+			productName = AmeliaUITests;
+			productReference = 2C49B01224B360DA0013F6F0 /* AmeliaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C49AFF424B360D80013F6F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Amy Collector";
+				TargetAttributes = {
+					2C49AFFB24B360D80013F6F0 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					2C49B01124B360DA0013F6F0 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 2C49AFFB24B360D80013F6F0;
+					};
+				};
+			};
+			buildConfigurationList = 2C49AFF724B360D80013F6F0 /* Build configuration list for PBXProject "Amelia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"en-GB",
+			);
+			mainGroup = 2C49AFF324B360D80013F6F0;
+			packageReferences = (
+				2C47355324BC7EF40037B8C1 /* XCRemoteSwiftPackageReference "amiitool" */,
+				2C84408424BE44F5004AA51F /* XCRemoteSwiftPackageReference "DeviceKit" */,
+				2C35D5E5251E9F63009AB2DA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				2C35D5EA25226A4B009AB2DA /* XCRemoteSwiftPackageReference "GRDB" */,
+			);
+			productRefGroup = 2C49AFFD24B360D80013F6F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C49AFFB24B360D80013F6F0 /* Amy */,
+				2C49B01124B360DA0013F6F0 /* AmeliaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C49AFFA24B360D80013F6F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C47353A24BBA28E0037B8C1 /* default@2x.png in Resources */,
+				2C47353924BBA28E0037B8C1 /* midnight@3x.png in Resources */,
+				2C47353D24BBA28E0037B8C1 /* default@3x.png in Resources */,
+				2C49B00C24B360DA0013F6F0 /* LaunchScreen.storyboard in Resources */,
+				2C47353C24BBA28E0037B8C1 /* whiteout@2x.png in Resources */,
+				2C637C3224B89698002DCDA3 /* Localizable.strings in Resources */,
+				2C47354124BBA28E0037B8C1 /* pride@3x.png in Resources */,
+				2C47352024BA7A890037B8C1 /* amiiboapi.json in Resources */,
+				2C47353B24BBA28E0037B8C1 /* whiteout@3x.png in Resources */,
+				2C47354024BBA28E0037B8C1 /* classico@3x.png in Resources */,
+				2C49B00924B360DA0013F6F0 /* Preview Assets.xcassets in Resources */,
+				2C47353E24BBA28E0037B8C1 /* pride@2x.png in Resources */,
+				2C47353824BBA28E0037B8C1 /* midnight@2x.png in Resources */,
+				2C47353F24BBA28E0037B8C1 /* classico@2x.png in Resources */,
+				2C49B00624B360DA0013F6F0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C49B01024B360DA0013F6F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C49AFF824B360D80013F6F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C47355B24BC98760037B8C1 /* Help.swift in Sources */,
+				2C47354E24BC4E8A0037B8C1 /* IdentifyResult.swift in Sources */,
+				2C47354B24BBB5240037B8C1 /* TagUtility.swift in Sources */,
+				2C47355724BC7F190037B8C1 /* Amiitool.swift in Sources */,
+				2C84408F24BE4EB8004AA51F /* CharacterData.swift in Sources */,
+				2C47351324BA62840037B8C1 /* AmiiboData.swift in Sources */,
+				2C47354924BBB4EF0037B8C1 /* Data+Extensions.swift in Sources */,
+				2C47352A24BB996B0037B8C1 /* SettingsViewModel.swift in Sources */,
+				2C1C57D524E47E5C002D19C3 /* EliteSettings.swift in Sources */,
+				2C47351924BA65A00037B8C1 /* EmptyListMessage.swift in Sources */,
+				2C9417DB24BD07A50081A15B /* SearchAmiibosViewModel.swift in Sources */,
+				2C49B00024B360D80013F6F0 /* AppDelegate.swift in Sources */,
+				2C47352C24BB9AE50037B8C1 /* PrivacyPolicy.swift in Sources */,
+				2C47351724BA63580037B8C1 /* AmiiboRepository.swift in Sources */,
+				2C47354524BBA8490037B8C1 /* WhatsNew.swift in Sources */,
+				2C47351524BA62D30037B8C1 /* Amiibo.swift in Sources */,
+				2C77AFCF24DF2BC300B95623 /* N2EliteManager.swift in Sources */,
+				2C47355224BC7E690037B8C1 /* NfcWrite.swift in Sources */,
+				2C4D122E24CB7774000CE1C8 /* ActivityIndicator.swift in Sources */,
+				2C637C3B24B8AA2C002DCDA3 /* Favourites.swift in Sources */,
+				2C47352424BB240E0037B8C1 /* CharacterListItem.swift in Sources */,
+				2C77AFD324E1EEE900B95623 /* SlotRestore.swift in Sources */,
+				2C47351024BA5FF70037B8C1 /* MainViewViewModel.swift in Sources */,
+				2C637C2B24B7A1C6002DCDA3 /* BlurView.swift in Sources */,
+				2C77AFD524E1F0AE00B95623 /* SlotRestoreViewModel.swift in Sources */,
+				2C47351B24BA6E2E0037B8C1 /* GameSeries.swift in Sources */,
+				2C637C2F24B7A88D002DCDA3 /* CharacterCard.swift in Sources */,
+				2C9417D924BD07820081A15B /* SearchAmiibos.swift in Sources */,
+				2C84408D24BE4E83004AA51F /* SyncConstants.swift in Sources */,
+				2C47351E24BA786D0037B8C1 /* UserDefaults+Extensions.swift in Sources */,
+				2C47355024BC647B0037B8C1 /* FileManager+Extensions.swift in Sources */,
+				2C49B00224B360D80013F6F0 /* SceneDelegate.swift in Sources */,
+				2C49B00424B360D80013F6F0 /* MainView.swift in Sources */,
+				2C47352624BB29F70037B8C1 /* SearchBar.swift in Sources */,
+				2C77AFCA24DF297D00B95623 /* DeviceList.swift in Sources */,
+				2C47350924BA55C00037B8C1 /* RoundedButton.swift in Sources */,
+				2C47355924BC8DFD0037B8C1 /* LinearProgress.swift in Sources */,
+				2C47354724BBB3EC0037B8C1 /* NfcIdentify.swift in Sources */,
+				2C637C4124B8D65B002DCDA3 /* SeriesSection.swift in Sources */,
+				2C47354324BBA2E40037B8C1 /* CustomIcons.swift in Sources */,
+				2C77AFCD24DF2AA100B95623 /* BankManagement.swift in Sources */,
+				2C637C4424B8DAB7002DCDA3 /* Settings.swift in Sources */,
+				2C47350724BA4DF10037B8C1 /* AmiibosByCategory.swift in Sources */,
+				2C47352224BB1EAA0037B8C1 /* AmiibosByCategoryViewModel.swift in Sources */,
+				2C9417DD24BDC6A00081A15B /* About.swift in Sources */,
+				2C47352824BB81F30037B8C1 /* ChevronRight.swift in Sources */,
+				2C77AFD124E03E2D00B95623 /* Array+Extensions.swift in Sources */,
+				2C84408324BE429F004AA51F /* MailView.swift in Sources */,
+				2C84408924BE4E2E004AA51F /* CloudKitQueue.swift in Sources */,
+				2C84408B24BE4E61004AA51F /* CloudKitHelper.swift in Sources */,
+				2C637C3F24B8B603002DCDA3 /* CharacterDetails.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C49B00E24B360DA0013F6F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C49B01724B360DA0013F6F0 /* AmeliaUITests.swift in Sources */,
+				2C9417E024BDED8A0081A15B /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C49B01424B360DA0013F6F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C49AFFB24B360D80013F6F0 /* Amy */;
+			targetProxy = 2C49B01324B360DA0013F6F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C49B00A24B360DA0013F6F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C49B00B24B360DA0013F6F0 /* Base */,
+				2C637C3524B896FD002DCDA3 /* en-GB */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2C637C3424B89698002DCDA3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C637C3624B896FD002DCDA3 /* en-GB */,
+				2C637C3724B8975A002DCDA3 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C49B01924B360DA0013F6F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C49B01A24B360DA0013F6F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C49B01C24B360DA0013F6F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Amelia/Amelia.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"Amelia/Preview Content\"";
+				DEVELOPMENT_TEAM = 6ZH2UC2KB2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Amelia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2020.8.18;
+				PRODUCT_BUNDLE_IDENTIFIER = app.amycollector.Amii;
+				PRODUCT_NAME = Amy;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2C49B01D24B360DA0013F6F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Amelia/Amelia.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"Amelia/Preview Content\"";
+				DEVELOPMENT_TEAM = 6ZH2UC2KB2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Amelia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2020.8.18;
+				PRODUCT_BUNDLE_IDENTIFIER = app.amycollector.Amii;
+				PRODUCT_NAME = Amy;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2C49B01F24B360DA0013F6F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ZH2UC2KB2;
+				INFOPLIST_FILE = AmeliaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.amycollector.AmeliaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Amy;
+			};
+			name = Debug;
+		};
+		2C49B02024B360DA0013F6F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ZH2UC2KB2;
+				INFOPLIST_FILE = AmeliaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.amycollector.AmeliaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Amy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C49AFF724B360D80013F6F0 /* Build configuration list for PBXProject "Amelia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C49B01924B360DA0013F6F0 /* Debug */,
+				2C49B01A24B360DA0013F6F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C49B01B24B360DA0013F6F0 /* Build configuration list for PBXNativeTarget "Amy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C49B01C24B360DA0013F6F0 /* Debug */,
+				2C49B01D24B360DA0013F6F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C49B01E24B360DA0013F6F0 /* Build configuration list for PBXNativeTarget "AmeliaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C49B01F24B360DA0013F6F0 /* Debug */,
+				2C49B02024B360DA0013F6F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C35D5E5251E9F63009AB2DA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+		2C35D5EA25226A4B009AB2DA /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.14.0;
+			};
+		};
+		2C47355324BC7EF40037B8C1 /* XCRemoteSwiftPackageReference "amiitool" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rowellx68/amiitool";
+			requirement = {
+				kind = revision;
+				revision = 4a304f2e15efdff8e080c56380e45743590881d9;
+			};
+		};
+		2C84408424BE44F5004AA51F /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devicekit/DeviceKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C35D5E6251E9F63009AB2DA /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C35D5E5251E9F63009AB2DA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		2C35D5EB25226A4B009AB2DA /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C35D5EA25226A4B009AB2DA /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+		2C47355424BC7EF40037B8C1 /* amiitool */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C47355324BC7EF40037B8C1 /* XCRemoteSwiftPackageReference "amiitool" */;
+			productName = amiitool;
+		};
+		2C84408524BE44F6004AA51F /* DeviceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C84408424BE44F5004AA51F /* XCRemoteSwiftPackageReference "DeviceKit" */;
+			productName = DeviceKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2C49AFF424B360D80013F6F0 /* Project object */;
+}

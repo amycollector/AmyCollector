@@ -1,0 +1,25 @@
+{
+    "default": {
+        "title": {
+            "color": "#4c4c4c",
+            "font": "./fonts/SF-Pro-Rounded-Regular.otf"
+        },
+        "keyword": {
+            "color": "#404040",
+            "font": "./fonts/SF-Pro-Rounded-Bold.otf"
+        },
+        // "background": "./background.jpg",
+        "frame": "GOLD",
+        "padding": "8%x10%",
+        "show_complete_frame": true,
+        "stack_title" : true,
+        "title_below_image": false,
+        "title_min_height": "15%"
+    },
+    "data": [
+        {
+            "filter": "Sync",
+            "frame": "BLACK"
+        }
+    ]
+}
